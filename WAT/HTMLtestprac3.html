@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HTMLtestprac3.css"/>
+    <title>HTML Test form</title>
+</head>
+<body>
+    <header>
+        <div class="userlogin">Login/Signup</div>
+        <div class="logo">
+            <img src="cat.png" alt="catto">
+        </div>
+        <h1>Company name</h1>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="table">
+            <table>
+                <tr>
+                    <th colspan="2">name</th>
+                    <th>class</th>
+                    <th>sec</th>
+                </tr>
+
+                <tr>
+                    <td>yuri</td>
+                    <td>roka</td>
+                    <td>L5</td>
+                    <td>E</td>
+                </tr>
+
+                <tr>
+                    <td>yuri</td>
+                    <td>roka</td>
+                    <td>L5</td>
+                    <td>E</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="myform">
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Personal details</legend>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="name">Your name:
+                            </label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="age">Your age:
+                            </label>
+                            <input type="text" id="age" name="age">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="email">Your email:
+                            </label>
+                            <input type="text" id="email" name="email">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"> 
+                            <label>Hobbies</label>
+
+                            <input type="checkbox" id="reading" name="hobbies">
+                            <label for="reading"> Reading</label>
+
+                             <input type="checkbox" id="sports" name="hobbies">
+                            <label for="sports"> sports</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class col>
+                            <label> Gender</label>
+
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">Male</label>
+
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="submit">Submit</button>
+                    
+                </fieldset>
+
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; All rights reverved</p>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('#submit').click(function(){
+                alert('form submitted');
+            })
+        })
+    </script>
+    
+</body>
+</html>

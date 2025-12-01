@@ -1,0 +1,161 @@
+header {
+    display: flex;           /* makes items sit side-by-side */
+    align-items: center;     /* vertically centers image + text */
+    padding: 10px;
+    background-color: skyblue;
+}
+
+.logo img {
+    width: 100px;             /* control image size */
+    height: 100px;
+    border-radius: 50%;
+}
+
+.companyname h1 {
+    margin: 0;               /* remove extra space */
+    font-size: 2rem;
+    padding: 10px;
+}
+
+nav{
+    background-color: lightblue;
+}
+nav ul{
+    text-align: left;
+}
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a{
+    text-decoration:none;
+}
+
+
+.container{
+    margin: 0px;
+}
+
+.tablecontent{
+    display: inline-block;
+    width: 50%;
+    height: auto;
+    background: lightgreen;
+}
+
+table{
+    font-size: 1.5em;
+    border-collapse: collapse;
+    width: 100%;
+}
+table, td, th{
+    border: 1px solid black;
+}
+
+td{
+    text-align: center;
+    padding: 8px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: aqua;
+}
+
+footer{
+    background-color: chocolate;
+}
+
+.copyright{
+    text-align: center;
+}
+
+footer div a{
+    width: 40px;
+    height: 40px;
+    background-color: brown;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    margin-bottom: 8px;
+    margin-left: 5px;
+}
+
+
+.submitbutton{
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    background-color: green;
+}
+
+
+
+
+form {
+    width: 500px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: skyblue;
+}
+
+/* Fieldset Styling */
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+/* Form row: label + input in one line */
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Label fixed width for alignment */
+.form-row label {
+    width: 80px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+/* Input/select/textarea styling */
+.form-row input,
+.form-row select {
+    flex: 1;
+    padding: 5px;
+}
+
+/* Inline labels (radio/checkbox) */
+.inline {
+    display: inline;
+    margin-right: 10px;
+    text-align: left;
+}
+
+/* Submit button */
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}

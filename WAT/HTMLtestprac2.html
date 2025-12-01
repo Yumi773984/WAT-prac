@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form Exercise </title>
+    <link rel="stylesheet" href="HTMLtestprac2.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <form action="" method="GET" class="testform">
+        <div class="row">
+            <div class="col">
+            <label> Enter your age: </label>
+            </div>
+             <div class="col">
+            <input type="text" name="age" id="age">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+            <label> Enter your name: </label>
+         </div>
+            <div class="col">
+            <input type="text" name="name" id="name">
+            </div>
+        </div> 
+        <input type="submit" name="save" id="save">
+    </form>
+    <script>
+        $(document).ready(function(){
+        alert('form submitted successfully');
+    })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#save').click(function(){
+            var age=$ ('#age').val();
+            if(age<18){
+                alert("Sorry you cannot regsiter to vote, you are underage.");
+            }
+            else{
+                alert("thank you for ebing a responsible citizen");
+            }
+            })
+        })
+
+        //fooling around with jquery,fun exercsie
+        $('#save').mouseenter(function()
+        {
+            $(this).css('margin-left', '70%');
+        });
+         $('#save').mouseleave(function(){
+            $(this).css('margin-left', '0%');
+        });
+    
+    </script>
+    
+</body>
+</html>

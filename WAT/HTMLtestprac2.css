@@ -1,0 +1,58 @@
+form.testform{
+    display: block;
+    background-color: lightgray;
+    width: 600px;
+    margin: 200px auto;
+    height: auto;
+    padding: 50px;
+}
+
+/* FIXED: label and text inputs should fill their column */
+label, input[type='text']{
+    display: block;
+    width: 100%;     /* ← FIX */
+    margin: 10px 0;
+    height: 32px;
+    border-radius: 10px;
+}
+
+input[type='submit']{
+    display: block;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px auto;
+}
+
+.row{
+    display: flex;    /* ← FIX */
+    width: 100%;
+    gap: 4%;          /* small space between columns */
+}
+
+.col{
+    width: 48%;
+}
+
+/* responsive code */
+@media only screen and (max-width:600px)
+{
+    form.testform{
+        width: 400px;
+        background-color: antiquewhite;
+    }
+
+    .row{
+        display: block;   /* stack columns */
+    }
+
+    .col{
+        width: 100%;
+    }
+}
+
+input[type='submit']:hover{
+    cursor: pointer;
+    background: green;
+    color: azure;
+}
